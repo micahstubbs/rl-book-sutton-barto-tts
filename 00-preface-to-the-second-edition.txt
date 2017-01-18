@@ -1,0 +1,80 @@
+Preface to the Second Edition
+The nearly twenty years since the publication of the first edition of this book have
+seen tremendous progress in artificial intelligence, propelled in large part by advances
+in machine learning, including advances in reinforcement learning. Although the
+impressive computational power that became available is responsible for some of
+these advances, new developments in theory and algorithms have been driving forces
+as well. In the face of this progress, we decided that a second edition of our 1998
+book was long overdue, and we finally began the project in 2013. Our goal for the
+second edition was the same as our goal for the first: to provide a clear and simple
+account of the key ideas and algorithms of reinforcement learning that is accessible
+to readers in all the related disciplines. The edition remains an introduction, and
+we retain a focus on core, on-line learning algorithms. This edition includes some
+new topics that rose to importance over the intervening years, and we expanded
+coverage of topics that we now understand better. But we made no attempt to
+provide comprehensive coverage of the field, which has exploded in many different
+directions with outstanding contributions by many active researchers. We apologize
+for having to leave out all but a handful of these contributions.
+As for the first edition, we chose not to produce a rigorous formal treatment of
+reinforcement learning. However, since the first edition, our deeper understanding
+of some topics required a bit more mathematics to explain, though we have set off
+the more mathematical parts in shaded boxes that the non-mathematically-inclined
+may choose to skip. We also use a slightly different notation than we used in the
+first edition. Though somewhat more complicated, we have found through our own
+teaching from the first edition, that the new notation helps to address some common
+points of confusion. It emphasizes the difference between random variables, denoted
+with capital letters, and their instantiations, denoted in lower case. Along with
+this, it is natural to also use lower case for value functions (e.g., vπ) and restrict
+capitals to their tabular estimates (e.g., Qt(s, a)). Approximate value functions are
+deterministic functions of random parameters and are thus also in lower case (e.g.,
+vˆ(s,θt) ≈ vπ(s)). All the changes in notation are summarized in a table appearing
+early in the book.
+The structure of the book is also slightly changed from the first edition. The first
+part of the book comprising Chapters 2 though 8 is now focused on tabular methods
+without function approximation. Only after treating all the tabular methods,
+for both learning and planning, do we turn to function approximation. We then treat 
+linear function approximation in significantly more depth, with new chapters
+on off-policy and policy-gradient learning methods. Also new in the second edition
+are chapters on the intriguing connections between reinforcement learning and psychology
+(Chapter 14) and neuroscience (Chapter 15). Everything is updated with
+selected new results where pertinent, including the chapter on case studies, which
+has been updated with a selection of recent applications.
+We designed the book to be used as a text in a one-semester course, perhaps
+supplemented by readings from the literature or by a more mathematical text such
+as Bertsekas and Tsitsiklis (1996) or Szepesv´ari (2010). This book can also be used
+as part of a broader course on machine learning, artificial intelligence, or neural
+networks. Throughout the book, sections that are more difficult and not essential
+to the rest of the book are marked with a ∗. These can be omitted on first reading
+without creating problems later on. Some exercises are marked with a ∗ to indicate
+that they are more advanced and not essential to understanding the basic material
+of the chapter.
+As in the first edition, most chapters end with a section entitled “Bibliographical
+and Historical Remarks,” wherein we credit the sources of the ideas presented in
+that chapter, provide pointers to further reading and ongoing research, and describe
+relevant historical background. Despite our attempts to make these sections authoritative
+and complete, we have undoubtedly left out some important prior work. For
+that we again apologize, and we welcome corrections and extensions for incorporation
+into the electronic version of the book.
+We have very many people to thank for their inspiration and help with this second
+edition. Everyone we acknowledged for their inspiration and help with the first edition
+deserve our deepest gratitude for this edition as well, which would not exist were
+it not for their contributions to edition number one. To that long list we must add
+many others who contributed specifically to the second edition. Our students over
+the many years we have taught from the first edition contributed in countless ways:
+exposing errors, offering fixes, and—not the least—being confused in places where
+we could have explained things better. The chapters on psychology and neuroscience
+could not have been written without the help of many experts in those fields. We
+thank John Moore for his patient tutoring on animal learning experiments theory,
+and neuroscience, and for his careful reading of multiple drafts of Chapters 14 and
+15. We thank Matt Botvinick, Nathaniel Daw, Peter Dayan, and Yael Niv for their
+penetrating comments on drafts of these chapters and essential help in guiding us
+through the massive literature. We thank Phil Thomas for helping us make these
+chapters accessible to non-psychologists and non-neuroscientists. Of course, any errors
+and omissions in these chapters are totally our own. We thank Jim Houk for
+introducing us to the subject of information processing in the basal ganglia. Jos´e
+Mart´ınez, Terry Sejnowski, David Silver, Gerry Tesauro, Georgios Theocharous, and
+Phil Thomas generously helped us understand details of their reinforcement learning
+applications for inclusion in the case-studies chapter. We thank George Konidaris
+for his help in preparing the section on the Fourier basis. Emilio Cartoni, Stefan
+Dernbach, Clemens Rosenbaum, and Patrick Taylor helped us in various important
+ways for which we are most grateful.
